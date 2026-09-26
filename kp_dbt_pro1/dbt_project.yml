@@ -34,3 +34,15 @@ models:
     # Config indicated by + and applies to all files under models/example/
     bronze:
       +materialized: table
+      +schema: bronze
+    gold:
+      +materialized: table
+      +schema: gold      
+    silver:
+      +materialized: table
+      +schema: silver
+
+seeds:
+  kp_dbt_pro1:
+    bronze:
+      +schema: bronze
