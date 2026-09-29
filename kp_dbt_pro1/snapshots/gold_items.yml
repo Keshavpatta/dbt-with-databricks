@@ -3,7 +3,7 @@ snapshots:
     relation: ref('item_type2')
     config:
       schema: gold
-      database: dev_dbt
+      database: '{{ target.catalog }}'
       strategy: timestamp
       updated_at: updateddate
       unique_key: id
